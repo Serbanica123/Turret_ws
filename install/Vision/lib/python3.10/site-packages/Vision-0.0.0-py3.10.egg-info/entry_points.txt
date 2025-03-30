@@ -1,0 +1,3 @@
+[console_scripts]
+Vision = Vision.VisionSubscriber:main
+

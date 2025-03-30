@@ -1,0 +1,38 @@
+[0.789s] Invoking command in '/home/alex/Turret_ws/src/Vision': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/alex/Turret_ws/build/Vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Vision build --build-base /home/alex/Turret_ws/build/Vision/build install --record /home/alex/Turret_ws/build/Vision/install.log --single-version-externally-managed install_data
+[0.953s] running egg_info
+[0.953s] creating ../../build/Vision/Vision.egg-info
+[0.953s] writing ../../build/Vision/Vision.egg-info/PKG-INFO
+[0.954s] writing dependency_links to ../../build/Vision/Vision.egg-info/dependency_links.txt
+[0.954s] writing entry points to ../../build/Vision/Vision.egg-info/entry_points.txt
+[0.954s] writing requirements to ../../build/Vision/Vision.egg-info/requires.txt
+[0.954s] writing top-level names to ../../build/Vision/Vision.egg-info/top_level.txt
+[0.954s] writing manifest file '../../build/Vision/Vision.egg-info/SOURCES.txt'
+[0.955s] reading manifest file '../../build/Vision/Vision.egg-info/SOURCES.txt'
+[0.955s] adding license file 'LICENSE'
+[0.955s] writing manifest file '../../build/Vision/Vision.egg-info/SOURCES.txt'
+[0.955s] running build
+[0.955s] running build_py
+[0.955s] creating /home/alex/Turret_ws/build/Vision/build
+[0.955s] creating /home/alex/Turret_ws/build/Vision/build/lib
+[0.955s] creating /home/alex/Turret_ws/build/Vision/build/lib/Vision
+[0.955s] copying Vision/VisionSubscriber.py -> /home/alex/Turret_ws/build/Vision/build/lib/Vision
+[0.955s] copying Vision/__init__.py -> /home/alex/Turret_ws/build/Vision/build/lib/Vision
+[0.955s] running install
+[0.956s] running install_lib
+[0.956s] creating /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision
+[0.956s] copying /home/alex/Turret_ws/build/Vision/build/lib/Vision/VisionSubscriber.py -> /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision
+[0.956s] copying /home/alex/Turret_ws/build/Vision/build/lib/Vision/__init__.py -> /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision
+[0.957s] byte-compiling /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/VisionSubscriber.py to VisionSubscriber.cpython-310.pyc
+[0.957s] byte-compiling /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__init__.py to __init__.cpython-310.pyc
+[0.957s] running install_data
+[0.957s] creating /home/alex/Turret_ws/install/Vision/share/ament_index
+[0.957s] creating /home/alex/Turret_ws/install/Vision/share/ament_index/resource_index
+[0.957s] creating /home/alex/Turret_ws/install/Vision/share/ament_index/resource_index/packages
+[0.958s] copying resource/Vision -> /home/alex/Turret_ws/install/Vision/share/ament_index/resource_index/packages
+[0.958s] copying package.xml -> /home/alex/Turret_ws/install/Vision/share/Vision
+[0.958s] running install_egg_info
+[0.959s] Copying ../../build/Vision/Vision.egg-info to /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision-0.0.0-py3.10.egg-info
+[0.959s] running install_scripts
+[0.974s] Installing Vision script to /home/alex/Turret_ws/install/Vision/lib/Vision
+[0.975s] writing list of installed files to '/home/alex/Turret_ws/build/Vision/install.log'
+[0.998s] Invoked command in '/home/alex/Turret_ws/src/Vision' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/alex/Turret_ws/build/Vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Vision build --build-base /home/alex/Turret_ws/build/Vision/build install --record /home/alex/Turret_ws/build/Vision/install.log --single-version-externally-managed install_data
