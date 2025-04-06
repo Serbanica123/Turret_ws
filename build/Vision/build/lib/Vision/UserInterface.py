@@ -2,6 +2,7 @@
 import sys
 sys.path.append('/home/alex/anaconda3/envs/Turret3.10/lib/python3.10/site-packages')
 
+import numpy as np
 import wx
 import wx.xrc
 import gettext
@@ -53,7 +54,11 @@ class cameraFeedFrame ( wx.Frame ):
 
     # Virtual event handlers, override them in your derived class
     def onFeedClick( self, event ):
-        print(event.GetPosition())
+        x,y=event.GetPosition()
+        print(x)
+        print(y)
+        print(self.transformation([x,y,0,1], xOffset=60))
+        
 
 
     def setFeed(self, img):
@@ -64,6 +69,26 @@ class cameraFeedFrame ( wx.Frame ):
         bitmap = wx.Bitmap(image)  
         self.cameraFeed.SetBitmap(bitmap)  
         self.cameraFeed.Refresh()
+
+    def transformation(self, point,xOffset=0, yOffset=0, zOffset=0, thetaX=0, thetaY=0, thetaZ=0):
+        point=np.array(point)
+        thetaX=np.radians(thetaX)
+        thetaY=np.radians(thetaY)
+        thetaZ=np.radians(thetaZ)
+
+        rX=np.array([[1,0,0],[0, np.cos(thetaX), -np.sin(thetaX)],[0, np.sin(thetaX), np.cos(thetaX)]])
+        rY=np.array([[np.cos(thetaY), 0, np.sin(thetaY)],[0,1,0],[-np.sin(thetaY), 0, np.cos(thetaY)]])
+        rZ=np.array([[np.cos(thetaZ),-np.sin(thetaZ), 0],[np.sin(thetaZ),np.cos(thetaZ),0],[0,0,1]])
+        R=rZ@rY@rX
+        M = np.array([
+            [R[0, 0], R[0, 1], R[0, 2], xOffset],
+            [R[1, 0], R[1, 1], R[1, 2], yOffset],
+            [R[2, 0], R[2, 1], R[2, 2], zOffset],
+            [0, 0, 0, 1]])
+        return M@point
+
+
+
 class MainTurretApp(wx.App):
     def __init__(self):
         super().__init__()

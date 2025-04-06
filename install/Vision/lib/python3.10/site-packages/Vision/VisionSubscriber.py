@@ -27,6 +27,7 @@ class CameraSubscriber(Node):
             cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
             cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
             wx.CallAfter(self.turretApp.setCameraFrameFeed, cv_image)
+            
         except Exception as e:
             self.get_logger().error(f"Error processing image: {e}")
 
