@@ -9,11 +9,9 @@ setup.py
 ../../build/Vision/Vision.egg-info/requires.txt
 ../../build/Vision/Vision.egg-info/top_level.txt
 ../../build/Vision/Vision.egg-info/zip-safe
+Vision/UserInterface.py
 Vision/VisionSubscriber.py
 Vision/__init__.py
-Vision/app.py
-Vision/events.py
-Vision/main_window.py
 resource/Vision
 test/test_copyright.py
 test/test_flake8.py

@@ -1,12 +1,8 @@
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/app.py
+/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/UserInterface.py
 /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/VisionSubscriber.py
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/main_window.py
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/events.py
 /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__init__.py
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/app.cpython-310.pyc
+/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/UserInterface.cpython-310.pyc
 /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/VisionSubscriber.cpython-310.pyc
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/main_window.cpython-310.pyc
-/home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/events.cpython-310.pyc
 /home/alex/Turret_ws/install/Vision/lib/python3.10/site-packages/Vision/__pycache__/__init__.cpython-310.pyc
 /home/alex/Turret_ws/install/Vision/share/ament_index/resource_index/packages/Vision
 /home/alex/Turret_ws/install/Vision/share/Vision/package.xml
